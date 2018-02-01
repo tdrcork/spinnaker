@@ -1,16 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
+/* * {
+  border: 1px solid black;
+} */
+
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
 body {
     margin: 0;
     padding: 0;
 }
-@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+.raised-link {
+  background-color: #7C6500;
+  color: white;
+
+}
+
+.gen-text {
+  color: #A1141B
+}
 
 .jumbotron {
 background-image: url(https://mdbootstrap.com/img/Photos/Others/gradient1.jpg);
 height:  500px;
 margin: 0px auto;
 padding:  30px 70px;
-margin-top:  30px;
 }
 
 .loader,

@@ -1,41 +1,43 @@
-<nav fxLayout="row" class="topnav">
+<mat-toolbar fxLayout="row" class="topnav">
     
     <div fxFlex>
-      <!-- Logo img will go here.  Far Left -->
+      <div fxLayout="column" fxLayoutAlign="center start">         
+          <h1 fxFlex class="logo-name">PERSONAL WEBSITE</h1>        
+          <a fxFlex>           
+            <p class="logo-words mat-caption">Web Stuff</p>
+          </a> 
+      </div>
     </div>
 
-    <div fxFlex>
-      <!-- Logo Words with more under -->
-      <a href="/">Resume Website</a>
-      <p>see my skills</p>
-    </div>
+    <div fxFlex="50%"></div>
 
-    <div class="example-spacer"></div>
+    <button mat-button fxFlex>Link
+      <i class="material-icons">keyboard_arrow_down</i>
+    </button>
 
-    <div fxFlex>
-      <!-- drop down icon -->
-      <!-- header link -->
-      <p>Link</p>
-    </div>
+<!--     <div fxFlex>
+      <mat-menu #appMenu="matMenu">
+        <button mat-menu-item> Settings </button>
+        <button mat-menu-item> Help </button>
+      </mat-menu>
+        
+      <button mat-icon-button [matMenuTriggerFor]="appMenu">Link
+          <i class="material-icons">keyboard_arrow_down</i> 
+      </button>
+    </div> -->
 
-    <div fxFlex>
-      <!-- drop down icon -->
-      <!-- header link -->
-      <p>Link</p>
-    </div>
+    <button mat-button fxFlex>Link
+      <i class="material-icons">keyboard_arrow_down</i>    
+    </button>
 
-    <div fxFlex>
-      
-    </div>
 
-    <div fxFlex>
-      <p>Log In</p>
+    <button mat-raised-button fxFlex="1 1.2 auto">Log In
 <!--       <ul>
         <div  *ngIf="isAuthenticated" routerLinkActive="active"><a (click)="onLogout()" style="cursor: pointer;">Logout</a></li>
         <li *ngIf="!isAuthenticated" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"><a routerLink="/">Sign In</a></li>
         <li *ngIf="!isAuthenticated" routerLinkActive="active"><a routerLink="/signup">Sign Up</a></li>
       </ul> -->
-    </div>
+    </button>
 
     
-  </nav>
+  </mat-toolbar>
