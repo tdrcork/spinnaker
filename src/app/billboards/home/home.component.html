@@ -1,11 +1,43 @@
 <div fxLayout="row" fxLayoutAlign="center center" class="jumbotron">
     <div fxFlex>
-        <h1 class="mat-display-3 grabber">Contrary to popular belief Lorem Ipsum is not simply random text. </h1>
-        <p class="mat-subheading-2 sub-grabber">The all-new FreshBooks is accounting software that makes running your small business easy, fast and secure. Spend less time on accounting and more time doing the work you love.</p>
+        <h1 class="mat-display-3 grabber">Web creation designed to increase your clientele</h1>
+        <p class="mat-subheading-2 sub-grabber">Recieve both a professional website and mobile app that will streamline your payment process and increase your visibility</p>
         <button mat-raised-button class="raised-link grabber-link">Find Out More</button>
     </div>
 
     <div fxFlex fxFlexAlign="center center">
-      <!-- <img src="../../../assets/img/web-design.svg" class="picture"> -->
+            <mat-accordion>
+                    <mat-expansion-panel>
+                      <mat-expansion-panel-header>
+                        <mat-panel-title>
+                          Personal data
+                        </mat-panel-title>
+                        <mat-panel-description>
+                          Type your name and age
+                        </mat-panel-description>
+                      </mat-expansion-panel-header>
+                  
+                      <mat-form-field>
+                        <input matInput placeholder="First name">
+                      </mat-form-field>
+                  
+                      <mat-form-field>
+                        <input matInput placeholder="Age">
+                      </mat-form-field>
+                    </mat-expansion-panel>
+                    <mat-expansion-panel (opened)="panelOpenState = true"
+                                         (closed)="panelOpenState = false">
+                      <mat-expansion-panel-header>
+                        <mat-panel-title>
+                          Self aware panel
+                        </mat-panel-title>
+                        <mat-panel-description>
+                          Currently I am {{panelOpenState ? 'open' : 'closed'}}
+                        </mat-panel-description>
+                      </mat-expansion-panel-header>
+                      <p>I'm visible because I am open</p>
+                    </mat-expansion-panel>
+                  </mat-accordion>
+
     </div>
 </div>

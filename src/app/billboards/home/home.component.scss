@@ -18,12 +18,14 @@
   color: black;
 }
 
-.picture {
-  height: 400px;
+.example-headers-align .mat-expansion-panel-header-title, 
+.example-headers-align .mat-expansion-panel-header-description {
+  flex-basis: 0;
 }
 
-* {
-  border: 1px border solid;
+.example-headers-align .mat-expansion-panel-header-description {
+  justify-content: space-between;
+  align-items: center;
 }
 
 
