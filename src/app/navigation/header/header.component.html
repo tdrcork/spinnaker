@@ -1,37 +1,44 @@
 <mat-toolbar fxLayout="row" class="topnav">
-    
+
     <div fxFlex>
-      <div fxLayout="column" fxLayoutAlign="center start">         
-          <h1 fxFlex class="logo-name">PERSONAL WEBSITE</h1>        
-          <a fxFlex>           
+      <div fxLayout="column" fxLayoutAlign="center start">
+          <h1 fxFlex class="mat-header">PERSONAL WEBSITE</h1>
+          <a fxFlex>
             <p class="logo-words mat-caption">Web Stuff</p>
-          </a> 
+          </a>
       </div>
     </div>
 
     <div fxFlex="50%"></div>
 
-    <button mat-button fxFlex>Link
+  <!--   <button mat-button fxFlex (click)="openMenu()">Link
       <i class="material-icons">keyboard_arrow_down</i>
-    </button>
+    </button> -->
+
+    <button mat-button [matMenuTriggerFor]="menu">Menu<i class="material-icons">keyboard_arrow_down</i></button>
+<!--     <mat-menu #menu="matMenu">
+      <button mat-menu-item>Item 1</button>
+      <button mat-menu-item>Item 2</button>
+    </mat-menu> -->
+
 
 <!--     <div fxFlex>
       <mat-menu #appMenu="matMenu">
         <button mat-menu-item> Settings </button>
         <button mat-menu-item> Help </button>
       </mat-menu>
-        
+
       <button mat-icon-button [matMenuTriggerFor]="appMenu">Link
-          <i class="material-icons">keyboard_arrow_down</i> 
+          <i class="material-icons">keyboard_arrow_down</i>
       </button>
     </div> -->
 
     <button mat-button fxFlex>Link
-      <i class="material-icons">keyboard_arrow_down</i>    
+      <i class="material-icons">keyboard_arrow_down</i>
     </button>
 
 
-    <button mat-raised-button fxFlex="1 1.2 auto">Log In
+    <button mat-raised-button fxFlex="1 1.2 auto" class="raised-link header-link">Log In
 <!--       <ul>
         <div  *ngIf="isAuthenticated" routerLinkActive="active"><a (click)="onLogout()" style="cursor: pointer;">Logout</a></li>
         <li *ngIf="!isAuthenticated" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"><a routerLink="/">Sign In</a></li>
@@ -39,5 +46,5 @@
       </ul> -->
     </button>
 
-    
+
   </mat-toolbar>
