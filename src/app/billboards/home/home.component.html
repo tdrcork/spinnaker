@@ -1,43 +1,10 @@
-<div fxLayout="row" fxLayoutAlign="center center" class="jumbotron">
-    <div fxFlex>
-        <h1 class="mat-display-3 grabber">Web creation designed to increase your clientele</h1>
-        <p class="mat-subheading-2 sub-grabber">Recieve both a professional website and mobile app that will streamline your payment process and increase your visibility</p>
-        <button mat-raised-button class="raised-link grabber-link">Find Out More</button>
-    </div>
+<div fxLayout="column" fxLayoutAlign="start center" class="jumbotron">
+  <div fxFlex="1 2 auto"></div>
+  <div fxFlex>
+      <h1 class="mat-display-3 grabber">Web creation designed to increase your clientele</h1>
+      <p class="mat-subheading-2 sub-grabber"><i>Recieve both a professional website and mobile app that will streamline your payment process and increase your visibility</i></p>
+  </div>
 
-    <div fxFlex fxFlexAlign="center center">
-            <mat-accordion>
-                    <mat-expansion-panel>
-                      <mat-expansion-panel-header>
-                        <mat-panel-title>
-                          Personal data
-                        </mat-panel-title>
-                        <mat-panel-description>
-                          Type your name and age
-                        </mat-panel-description>
-                      </mat-expansion-panel-header>
-                  
-                      <mat-form-field>
-                        <input matInput placeholder="First name">
-                      </mat-form-field>
-                  
-                      <mat-form-field>
-                        <input matInput placeholder="Age">
-                      </mat-form-field>
-                    </mat-expansion-panel>
-                    <mat-expansion-panel (opened)="panelOpenState = true"
-                                         (closed)="panelOpenState = false">
-                      <mat-expansion-panel-header>
-                        <mat-panel-title>
-                          Self aware panel
-                        </mat-panel-title>
-                        <mat-panel-description>
-                          Currently I am {{panelOpenState ? 'open' : 'closed'}}
-                        </mat-panel-description>
-                      </mat-expansion-panel-header>
-                      <p>I'm visible because I am open</p>
-                    </mat-expansion-panel>
-                  </mat-accordion>
-
-    </div>
+  <button fxFlex fxFlexAlign="center start" mat-raised-button class="raised-link grabber-link">See Examples</button>
+  <div fxFlex="1 1 auto"></div>
 </div>

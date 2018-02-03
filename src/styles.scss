@@ -4,31 +4,37 @@
 } */
 
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
-
+/* MINT:  #4ABDAC
+ORANGE/VERMILLION: #FC4A1A
+SUNSHINE?YELLOW:  #F7B733
+CLEAN: #DFDCE3 */
 body {
-    margin: 0;
-    padding: 0;
-    background-color: #dfe6e9;
-}
+  margin: 0 auto;
+  padding: 0;
+  background-color: #DFDCE3;
+  max-width:  1300px;
+/*     box-shadow: 0 0 5px -1px rgba(0,0,0,.2), 0 0 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12);
+*/}
 
 .raised-link {
-  background-color: white;
-  color: black;
+background-color: #F7B733;
+color: black;
+max-height: 70px;
 }
 
 .gen-text {
-  color: #A1141B
+color: #A1141B
 }
 
 .jumbotron {
 /* background-image: url(https://mdbootstrap.com/img/Photos/Others/gradient1.jpg); */
-background-color:  #673ab7;
+background-color:  #4ABDAC;
 height:  500px;
 margin: 0px auto;
-padding:  30px 70px;
-color: white;
+padding:  30px 250px;
+padding-bottom: 0px;
+color: #DFDCE3;
 }
-
 .loader,
 .loader:after {
   border-radius: 50%;

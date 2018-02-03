@@ -20,6 +20,7 @@ import { HomeComponent } from './billboards/home/home.component';
 import { AuthService } from './user/auth.service';
 
 /* Design Modules */
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
@@ -29,14 +30,10 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatExpansionModule} from '@angular/material/expansion';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatDatepickerModule} from '@angular/material/datepicker';
+import {MatInputModule} from '@angular/material/input';
 
+import 'hammerjs';
 /* Amazon AWS SDK imports */
-
-
-
-
-
-
 
 @NgModule({
   declarations: [
@@ -48,6 +45,7 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     FlexLayoutModule,
     MatCardModule,
     MatButtonModule,
@@ -57,6 +55,7 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
     MatExpansionModule,
     MatFormFieldModule,
     MatDatepickerModule,
+    MatInputModule,
     FormsModule,
     HttpModule,
   ],
