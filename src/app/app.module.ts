@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 /* Base Angular Modules */
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
@@ -31,8 +31,10 @@ import {MatExpansionModule} from '@angular/material/expansion';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatInputModule} from '@angular/material/input';
+import {MatTabsModule} from '@angular/material/tabs';
 
 import 'hammerjs';
+import { TabsComponent } from './pages/tabs/tabs.component';
 /* Amazon AWS SDK imports */
 
 @NgModule({
@@ -41,7 +43,8 @@ import 'hammerjs';
     SigninComponent,
     SignupComponent,
     HeaderComponent,
-    HomeComponent
+    HomeComponent,
+    TabsComponent
   ],
   imports: [
     BrowserModule,
@@ -56,7 +59,9 @@ import 'hammerjs';
     MatFormFieldModule,
     MatDatepickerModule,
     MatInputModule,
+    MatTabsModule,
     FormsModule,
+    ReactiveFormsModule,
     HttpModule,
   ],
   providers: [AuthService],

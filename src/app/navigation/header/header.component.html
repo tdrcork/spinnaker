@@ -11,9 +11,14 @@
 
   <div fxFlex="8 1 auto"></div>
 
-  <button fxFlex fxFlexAlign="end end" mat-button [matMenuTriggerFor]="menu">Who It's For
+  <button fxFlex fxFlexAlign="end end" mat-button [matMenuTriggerFor]="firstDropDown">Who It's For
     <i class="material-icons">keyboard_arrow_down</i>
   </button>
+
+  <mat-menu #firstDropDown="matMenu" [overlapTrigger]="false">
+    <button mat-menu-item>Item 1</button>
+    <button mat-menu-item>Item 2</button>
+  </mat-menu>
 
   <button mat-button fxFlex fxFlexAlign="end end">What You Get
     <i class="material-icons">keyboard_arrow_down</i>
