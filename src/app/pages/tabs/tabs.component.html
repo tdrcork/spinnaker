@@ -1,59 +1,79 @@
-<div fxLayout>
-  <mat-card class="example-card">
-    <mat-card-header>
-      <div mat-card-avatar class="example-header-image"></div>
-      <mat-card-title>Web Design</mat-card-title>
-      <mat-card-subtitle>Usability Tested and SEO Optimized</mat-card-subtitle>
-    </mat-card-header>
-    <img mat-card-image src="../../../assets/img/sample.png" alt="Photo of a Shiba Inu">
-    <mat-card-content>
-      <p>
-        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
-        A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
-        bred for hunting.
-      </p>
-    </mat-card-content>
-    <mat-card-actions>
-      <button mat-button>See More</button>
-    </mat-card-actions>
-  </mat-card>
+<div fxLayout class="mat-typography">
+  <div fxFlex="1 1 5%"></div>
+  <div fxFlex>
+    <h2 class="text-middle mat-title">Services for Businesses</h2>
+      <mat-accordion>
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                Personal data
+              </mat-panel-title>
+              <mat-panel-description>
+                Type your name and age
+              </mat-panel-description>
+            </mat-expansion-panel-header>
+        
+            <mat-form-field>
+              <input matInput placeholder="First name">
+            </mat-form-field>
+        
+            <mat-form-field>
+              <input matInput placeholder="Age">
+            </mat-form-field>
+          </mat-expansion-panel>
+          <mat-expansion-panel (opened)="panelOpenState = true"
+                               (closed)="panelOpenState = false">
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                Self aware panel
+              </mat-panel-title>
+              <mat-panel-description>
+                Currently I am {{panelOpenState ? 'open' : 'closed'}}
+              </mat-panel-description>
+            </mat-expansion-panel-header>
+            <p>I'm visible because I am open</p>
+          </mat-expansion-panel>
+        </mat-accordion>
+  </div>
+  
+  <div fxFlex="1 2 5%"></div>
+  <mat-divider [vertical]="true"></mat-divider>
+  <div fxFlex="1 2 5%"></div>
+  <div fxFlex>
+      <h2 class="text-middle mat-title">Services for Individuals</h2>
+      <mat-accordion>
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                Personal data
+              </mat-panel-title>
+              <mat-panel-description>
+                Type your name and age
+              </mat-panel-description>
+            </mat-expansion-panel-header>
+        
+            <mat-form-field>
+              <input matInput placeholder="First name">
+            </mat-form-field>
+        
+            <mat-form-field>
+              <input matInput placeholder="Age">
+            </mat-form-field>
+          </mat-expansion-panel>
+          <mat-expansion-panel (opened)="panelOpenState = true"
+                               (closed)="panelOpenState = false">
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                Self aware panel
+              </mat-panel-title>
+              <mat-panel-description>
+                Currently I am {{panelOpenState ? 'open' : 'closed'}}
+              </mat-panel-description>
+            </mat-expansion-panel-header>
+            <p>I'm visible because I am open</p>
+          </mat-expansion-panel>
+        </mat-accordion>
+  </div>
 
-  <mat-card class="example-card">
-    <mat-card-header>
-      <div mat-card-avatar class="example-header-image"></div>
-      <mat-card-title>Mobile Applications</mat-card-title>
-      <mat-card-subtitle>Payment, Scheduling, and Membership</mat-card-subtitle>
-    </mat-card-header>
-    <img mat-card-image src="../../../assets/img/sample.png" alt="Photo of a Shiba Inu">
-    <mat-card-content>
-      <p>
-        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
-        A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
-        bred for hunting.
-      </p>
-    </mat-card-content>
-    <mat-card-actions>
-      <button mat-button>See More</button>
-    </mat-card-actions>
-  </mat-card>
-
-  <mat-card class="example-card">
-    <mat-card-header>
-      <div mat-card-avatar class="example-header-image"></div>
-      <mat-card-title>Automate Tedius Tasks</mat-card-title>
-      <mat-card-subtitle>Bookkeeping Made easy</mat-card-subtitle>
-    </mat-card-header>
-    <img mat-card-image src="../../../assets/img/sample.png" alt="Photo of a Shiba Inu">
-    <mat-card-content>
-      <p>
-        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
-        A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
-        bred for hunting.
-      </p>
-    </mat-card-content>
-    <mat-card-actions>
-      <button mat-button>See More</button>
-    </mat-card-actions>
-  </mat-card>
-
+  <div fxFlex="1 1 5%"></div>
 </div>

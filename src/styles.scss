@@ -17,19 +17,26 @@ body {
 */}
 
 .raised-link {
-background-color: #F7B733;
+background-color: white;
 color: black;
-max-height: 40px;
+/* max-height: 40px; */
 }
 
 .gen-text {
 color: #A1141B
 }
 
+.text-middle {
+  text-align: center;
+}
+
+.spacer {
+  height: 20px;
+}
 .jumbotron {
 /* background-image: url(https://mdbootstrap.com/img/Photos/Others/gradient1.jpg); */
-background-color:  #4ABDAC;
-height:  350px;
+background-color:  #0C71C3;
+height:  600px;
 margin: 0px auto;
 padding:  30px 250px;
 padding-bottom: 0px;

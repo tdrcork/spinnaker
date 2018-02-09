@@ -32,9 +32,12 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatInputModule} from '@angular/material/input';
 import {MatTabsModule} from '@angular/material/tabs';
+import {MatDividerModule} from '@angular/material/divider';
+
 
 import 'hammerjs';
 import { TabsComponent } from './pages/tabs/tabs.component';
+import { SpacerComponent } from './pages/spacer/spacer.component';
 /* Amazon AWS SDK imports */
 
 @NgModule({
@@ -44,7 +47,8 @@ import { TabsComponent } from './pages/tabs/tabs.component';
     SignupComponent,
     HeaderComponent,
     HomeComponent,
-    TabsComponent
+    TabsComponent,
+    SpacerComponent
   ],
   imports: [
     BrowserModule,
@@ -60,6 +64,7 @@ import { TabsComponent } from './pages/tabs/tabs.component';
     MatDatepickerModule,
     MatInputModule,
     MatTabsModule,
+    MatDividerModule,
     FormsModule,
     ReactiveFormsModule,
     HttpModule,

@@ -1,35 +1,40 @@
 <mat-toolbar fxLayout="row" class="topnav">
 
   <div fxFlex>
-    <div fxLayout="column" fxLayoutAlign="center start">
+    <img src="../../../assets/img/logo.png">
+<!--     <div fxLayout="column" fxLayoutAlign="center start">
         <h1 fxFlex class="mat-header">Risk Free Design</h1>
         <a fxFlex>
           <p class="logo-words mat-caption">Website Creation</p>
         </a>
-    </div>
+    </div> -->
   </div>
 
-  <div fxFlex="8 1 auto"></div>
+  <div fxFlex="6 1 auto"></div>
 
-  <button fxFlex fxFlexAlign="end end" mat-button [matMenuTriggerFor]="firstDropDown">Who It's For
-    <i class="material-icons">keyboard_arrow_down</i>
+  <button fxFlex fxFlexAlign="end end" mat-button class="text-middle">Schedule a Meeting
   </button>
 
-  <mat-menu #firstDropDown="matMenu" [overlapTrigger]="false">
-    <button mat-menu-item>Item 1</button>
-    <button mat-menu-item>Item 2</button>
-  </mat-menu>
-
-  <button mat-button fxFlex fxFlexAlign="end end">What We Offer
-    <i class="material-icons">keyboard_arrow_down</i>
+  <button fxFlex fxFlexAlign="end end" mat-button class="text-middle">Pay My Bill
+    
   </button>
 
+  <button fxFlex fxFlexAlign="end end" mat-button [matMenuTriggerFor]="firstDropDown">
+      <i class="material-icons">keyboard_arrow_down</i>
+      Use Our Resources
+    </button>
+  
+    <mat-menu #firstDropDown="matMenu" [overlapTrigger]="false">
+      <button mat-menu-item>Item 1</button>
+      <button mat-menu-item>Item 2</button>
+    </mat-menu>
 
-  <button mat-raised-button fxFlex 
-          fxFlexAlign="center end" 
+
+ <!--  <button mat-raised-button fxFlex 
+          fxFlexAlign="end end" 
           fxFlexOffset="3%"
-          class="raised-link header-link">Pricing
+          class="raised-link header-link">Services
   </button>
-
+ -->
 
 </mat-toolbar>
