@@ -2,27 +2,23 @@
     border: 1px solid black;
 }  */
 
-.grabber {
-  margin: 0px;
-  margin-bottom: 10px;
-  text-align: center;
-  font-weight: bold;
-}
+/* .grabber-surround {
+  background-image: url("../../../assets/img/white.png");
+  opacity: 0.4;
+  padding: 10px;
+} */
 
 .sub-grabber {
 padding-right: 20%;
 padding-left: 20%;
-color: white;
 text-align: center;
 font-weight: lighter;
-/* font-style: italic; */
+opacity: 1;
 }
 
-.grabber-link {
-/* height: 50px;
-width: 200px; */
-color: black;
-/* padding-right: 85px;
-padding-left: 85px; */
+.grabber {
+  opacity: 1;
 }
+
+
 

@@ -13,11 +13,8 @@ import { Routes } from '@angular/router';
 
 /* Component Modules */
 import { AppComponent } from './app.component';
-import { SigninComponent } from './user/signin/signin.component';
-import { SignupComponent } from './user/signup/signup.component';
 import { HeaderComponent } from './navigation/header/header.component';
 import { HomeComponent } from './billboards/home/home.component';
-import { AuthService } from './user/auth.service';
 
 /* Design Modules */
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
@@ -28,27 +25,35 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatIconModule} from '@angular/material/icon';
 import {MatExpansionModule} from '@angular/material/expansion';
-import {MatFormFieldModule} from '@angular/material/form-field';
-import {MatDatepickerModule} from '@angular/material/datepicker';
-import {MatInputModule} from '@angular/material/input';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatDividerModule} from '@angular/material/divider';
 
+/* Angular Material Form Modules */
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import {MatInputModule} from '@angular/material/input';
+import {MatAutocompleteModule} from '@angular/material/autocomplete';
+import {MatCheckboxModule} from '@angular/material/checkbox';
+import {MatRadioModule} from '@angular/material/radio';
+import {MatSelectModule} from '@angular/material/select';
+import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 
 import 'hammerjs';
 import { TabsComponent } from './pages/tabs/tabs.component';
 import { SpacerComponent } from './pages/spacer/spacer.component';
+import { AboutComponent } from './pages/about/about.component';
+import { FooterComponent } from './navigation/footer/footer.component';
 /* Amazon AWS SDK imports */
 
 @NgModule({
   declarations: [
     AppComponent,
-    SigninComponent,
-    SignupComponent,
     HeaderComponent,
     HomeComponent,
     TabsComponent,
-    SpacerComponent
+    SpacerComponent,
+    AboutComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
@@ -68,8 +73,12 @@ import { SpacerComponent } from './pages/spacer/spacer.component';
     FormsModule,
     ReactiveFormsModule,
     HttpModule,
+    MatAutocompleteModule,
+    MatCheckboxModule,
+    MatRadioModule,
+    MatSelectModule,
+    MatSlideToggleModule
   ],
-  providers: [AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

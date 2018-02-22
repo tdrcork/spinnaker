@@ -105,26 +105,18 @@ body {
   background-color: white;
 }
 
-.raised-link {
-background-color: white;
-color: black;
-}
-
-.text-middle {
-  text-align: center;
-}
 
 .spacer {
   height: 20px;
 }
 
 .jumbotron {
-background-color:  #0C71C3;
-height:  400px;
+background-image: url("assets/img/background.jpg");
+/* background-color:  #0C71C3; */
+height:  700px;
 margin: 0px auto;
 padding:  30px 250px;
 padding-bottom: 0px;
-color: white;
 }
 
 .thumbnail-link {

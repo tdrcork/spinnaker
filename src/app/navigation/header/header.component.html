@@ -1,6 +1,57 @@
-<mat-toolbar fxLayout="row" class="topnav">
+<div fxLayout class="topnav" fxLayoutAlign="start center">
+<!--   <span fxLayout>
+    <span fxFlex="7 1 auto"></span>
+    <div fxLayout>
+    <p class="mat-caption">Contact Us</p>
+    <p class="mat-caption">About Us</p>
+    <p class="mat-caption number">1.314.216.1409</p>
+    </div>
+  </span>
 
-  <div fxFlex>
+   -->
+<!--   <mat-divider [inset]="true"></mat-divider> -->
+
+    <div fxFlex><img src="../../../assets/img/logo.png"></div> <!-- LOGO -->
+
+    <div fxFlex="7 1 auto"></div> <!-- SPACER -->   
+
+    <button mat-button [matMenuTriggerFor]="servicesDropDown" fxFlex> <!-- Services Nav -->
+        <mat-icon>keyboard_arrow_down</mat-icon>
+        <span>Services</span> 
+    </button>
+
+    <button mat-button [matMenuTriggerFor]="resourcesDropDown" fxFlex> <!-- Downloads Nav -->
+      <mat-icon>keyboard_arrow_down</mat-icon>
+      <span>Resources</span>
+    </button>
+
+    <button fxFLex mat-raised-button class="header-button">Quickbooks Portal</button>
+
+    <mat-menu #servicesDropDown="matMenu" [overlapTrigger]="false">
+        <button mat-menu-item>
+          <mat-icon>person</mat-icon>
+          <span>Individual</span>
+        </button>
+        <button mat-menu-item>
+          <mat-icon>supervisor_account</mat-icon>
+          <span>Business</span>
+        </button>
+        <button mat-menu-item>
+            <mat-icon>work</mat-icon>
+            <span>Quickbooks</span>
+        </button>
+    </mat-menu>
+
+    <mat-menu #resourcesDropDown="matMenu" [overlapTrigger]="false">
+        <button mat-menu-item>
+          <mat-icon>file_download</mat-icon>
+          <span>Download Donation Form</span>
+        </button>
+      </mat-menu>
+    
+</div>  
+  
+  <!-- <div fxFlex>
     <img src="../../../assets/img/logo.png">
   </div>
 
@@ -96,7 +147,7 @@
       <mat-icon>monetization_on</mat-icon>
       <span>Pay Your Bill</span>
     </button>
-  </mat-menu>
+  </mat-menu> -->
 
 
  <!--  <button mat-raised-button fxFlex 
@@ -112,4 +163,4 @@ Contact Us: <i class="material-icons thumbnail">monetization_on</i>
 Donation Form: <i class="material-icons thumbnail">download thing</i>
 
  -->
-</mat-toolbar>
+
