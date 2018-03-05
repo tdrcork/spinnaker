@@ -111,16 +111,17 @@ body {
 }
 
 .jumbotron {
-background-image: url("assets/img/background.jpg");
-/* background-color:  #0C71C3; */
-height:  700px;
+/* background-image: url("assets/img/background.jpg"); */
+background-color:  #02006c;
+height:  450px;
 margin: 0px auto;
 padding:  30px 250px;
 padding-bottom: 0px;
+color: white;
 }
 
 .thumbnail-link {
-  color: #0C71C3;
+  color: #02006c;
   text-align: center;
   align-content: center;
   cursor: pointer;

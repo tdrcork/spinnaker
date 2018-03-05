@@ -28,11 +28,11 @@
     <button fxFLex mat-raised-button class="header-button">Quickbooks Portal</button>
 
     <mat-menu #servicesDropDown="matMenu" [overlapTrigger]="false">
-        <button mat-menu-item>
+        <button mat-menu-item [matMenuTriggerFor]="individualDropDown">
           <mat-icon>person</mat-icon>
           <span>Individual</span>
         </button>
-        <button mat-menu-item>
+        <button mat-menu-item [matMenuTriggerFor]="businessDropDown">
           <mat-icon>supervisor_account</mat-icon>
           <span>Business</span>
         </button>
@@ -47,7 +47,19 @@
           <mat-icon>file_download</mat-icon>
           <span>Download Donation Form</span>
         </button>
-      </mat-menu>
+    </mat-menu>
+
+    <mat-menu #individualDropDown="matMenu" [overlapTrigger]="false">
+        <button mat-menu-item>Tax Preperation</button>
+        <button mat-menu-item>Tax Planning</button>
+    </mat-menu>
+
+    <mat-menu #businessDropDown="matMenu" [overlapTrigger]="false">
+      <button mat-menu-item>Bookkeeping</button>
+      <button mat-menu-item>Small Business Accounting</button>
+      <button mat-menu-item>Compilations</button>
+    </mat-menu>
+  
     
 </div>  
   

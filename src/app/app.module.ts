@@ -27,6 +27,7 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatExpansionModule} from '@angular/material/expansion';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatDividerModule} from '@angular/material/divider';
+import {MatListModule} from '@angular/material/list';
 
 /* Angular Material Form Modules */
 import {MatFormFieldModule} from '@angular/material/form-field';
@@ -43,6 +44,8 @@ import { TabsComponent } from './pages/tabs/tabs.component';
 import { SpacerComponent } from './pages/spacer/spacer.component';
 import { AboutComponent } from './pages/about/about.component';
 import { FooterComponent } from './navigation/footer/footer.component';
+import { IndividualComponent } from './billboards/individual/individual.component';
+import { ServicesComponent } from './billboards/services/services.component';
 /* Amazon AWS SDK imports */
 
 @NgModule({
@@ -53,7 +56,9 @@ import { FooterComponent } from './navigation/footer/footer.component';
     TabsComponent,
     SpacerComponent,
     AboutComponent,
-    FooterComponent
+    FooterComponent,
+    IndividualComponent,
+    ServicesComponent
   ],
   imports: [
     BrowserModule,
@@ -77,7 +82,8 @@ import { FooterComponent } from './navigation/footer/footer.component';
     MatCheckboxModule,
     MatRadioModule,
     MatSelectModule,
-    MatSlideToggleModule
+    MatSlideToggleModule,
+    MatListModule
   ],
   bootstrap: [AppComponent]
 })
